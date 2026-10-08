@@ -3,8 +3,8 @@
 <BigText>
 
 - `reactive`APIは`Proxy`がベースとなっている
-- `state.count++`のような記法で値を変更するだけでUIに変更できる👍
-- この仕組みは、`Proxy`だからこそ実現しているのでは🤔
+- `state.count++`のような記法で値を変更するだけでUIの変更ができる👍
+- `reactive`の仕組みは、`Proxy`だからこそ実現しているのでは🤔
 
 </BigText>
 
