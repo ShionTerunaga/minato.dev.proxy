@@ -2,7 +2,7 @@
 
 本体のソースの`reactive`の関数から追っていくと以下のコードに到達する。
 
-```ts {all|10-13|15|all}
+```ts {all|10-15}
 function createReactiveObject(
   target: Target,
   isReadonly: boolean,
@@ -15,9 +15,14 @@ function createReactiveObject(
   const proxy = new Proxy(
     target,
     targetType === TargetType.COLLECTION ? collectionHandlers : baseHandlers,
-  )
-  proxyMap.set(target, proxy)
-  return proxy
+  );
+  proxyMap.set(target, proxy);
+  return proxy;
 }
 ```
 
+<BigText>
+
+`target`は`reactive`の引数で与えたオブジェクト。
+
+</BigText>

@@ -1,9 +1,10 @@
-<PageTitle title="ハンドラーの部分(set)" />
+<PageTitle title="ハンドラーの部分１" />
+`state.count++`とかしたら発火する部分
 
-```ts {all|5-22|13-20|all}
+```ts {all|5-20|13-17}
 class MutableReactiveHandler extends BaseReactiveHandler {
   constructor(isShallow = false) {
-    super(false, isShallow)
+    super(false, isShallow);
   }
   set(
     target: Record<string | symbol, unknown>,
@@ -12,16 +13,14 @@ class MutableReactiveHandler extends BaseReactiveHandler {
     receiver: object,
   ): boolean {
     //これ以降にたくさんゴニョゴニョ書いているよぉ〜
-
-    // UI更新などのリアクティブな処理を発火する入り口
     if (target === toRaw(receiver) && result) {
       if (!hadKey) {
-        trigger(target, TriggerOpTypes.ADD, key, value)
+        trigger(target, TriggerOpTypes.ADD, key, value); // UI更新などのリアクティブな処理を発火する入り口
       } else if (hasChanged(value, oldValue)) {
-        trigger(target, TriggerOpTypes.SET, key, value, oldValue)
+        trigger(target, TriggerOpTypes.SET, key, value, oldValue);
       }
     }
-    return result
+    return result;
   }
   //なんか色々書いてある
 }

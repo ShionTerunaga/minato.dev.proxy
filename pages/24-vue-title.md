@@ -1,1 +1,1 @@
-<SectionTitle title="事例4: Vue.js"/>
+<SectionTitle title="事例2: Vue.js"/>

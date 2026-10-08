@@ -1,14 +1,15 @@
-<PageTitle title="React verの簡単なまとめ"/>
+<PageTitle title="MotionとProxyの簡単なまとめ"/>
 
 <BigText class="react-summary">
 <v-clicks depth="2" animation="fade-in">
 
 - ハンドラー関数には`get`のみが宣言されている
-- `Map`をキャッシュをとして利用することで、不要なコンポーネントの再生成を防いでいる
-- `motion.create`が関数宣言と同じような役割を担う
-    - 昔は`motion(Component)`という宣言方法だった
-    - ただ、`apply`は宣言されていない
-    - 宣言方法が変わった理由のヒントはPR[#2778](https://github.com/motiondivision/motion/pull/2778), [#2787](https://github.com/motiondivision/motion/pull/2787)
+- 第一引数には関数が宣言されている
+- `Map`をキャッシュとして利用することで、不要なコンポーネントの再生成を防いでいる
+- カスタムコンポーネントなどにMotionのアニメーション機能を付与できる`motion.create`が存在
+  - 昔は`motion(Component)`という宣言がメインだった模様
+  - 今は推奨されていない(名前が`deprecatedFactoryFunction`)
+  - 理由のヒントはPR[#2778](https://github.com/motiondivision/motion/pull/2778), [#2787](https://github.com/motiondivision/motion/pull/2787)
 
 </v-clicks>
 </BigText>

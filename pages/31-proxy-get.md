@@ -1,6 +1,8 @@
-<PageTitle title="ハンドラーの部分(get)" />
+<PageTitle title="ハンドラーの部分２" />
 
-```ts {all|7-18|11-12|all}
+`{{ state.count }}`などの部分
+
+```ts {all|7-18|11-12}
 class BaseReactiveHandler implements ProxyHandler<Target> {
   constructor(
     protected readonly _isReadonly = false,
@@ -9,15 +11,15 @@ class BaseReactiveHandler implements ProxyHandler<Target> {
 
   get(target: Target, key: string | symbol, receiver: object): any {
     //なんか色々書いてあるわよ〜
-    
+
     if (!isReadonly) {
       // プロパティと、それを参照するeffectの依存関係を登録・管理する
-      track(target, TrackOpTypes.GET, key)
+      track(target, TrackOpTypes.GET, key);
     }
 
     //なんかもろもろ書いてあるね〜
 
-    return res
+    return res;
   }
 }
 ```

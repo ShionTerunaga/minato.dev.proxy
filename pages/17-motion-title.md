@@ -1,1 +1,1 @@
-<SectionTitle title="事例3: motion" />
+<SectionTitle title="事例1: Motion" />

@@ -4,19 +4,37 @@ level: 2
 
 <PageTitle title="発表の前に" />
 
-<SubsectionTitle title="保険" />
+<h2 class="trigger-heading">きっかけ</h2>
 
-- 初登壇です
-- 事実と異なる部分も多々あるかもしれません
-- 温かい目で見守っていただけるととても嬉しいです
+<v-click animation="fade-in">
 
-<br>
+- `Proxy`を初めて見たのは約4年前
+- ライブラリの中身で見かけることはあったが。。
+  - 仕事で使わないので放置していた
+  - 「あー、またあるじゃん」くらいのノリ
+  - ライブラリの部分の実装も含めて何も理解していなかった
+- いつか理解したいなと思ってたが今回、登壇を機に調べてみることにした
 
-<SubsectionTitle title="今日話すこと" />
+</v-click>
 
-- JavaScriptの`Proxy`の話
-- 概要
-- どんなところで使われているのか
+<h2 class="trigger-heading">今日話すこと</h2>
 
+<v-click animation="fade-in">
 
+- JavaScriptの`Proxy`の調査報告のようなもの
+  - 概要
+  - どんなところで使われているのか
+- そんなに深い話はしない
 
+</v-click>
+
+<style scoped>
+.trigger-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+ul + .trigger-heading {
+  margin-top: 0.75rem;
+}
+</style>

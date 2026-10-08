@@ -2,13 +2,9 @@
 
 <BigText>
 
-<v-clicks depth="2" animation="fade-in">
-
-- `reactive`APIは`Proxy`が使われている
-- `state.count = 1`のように通常のオブジェクトと同じ記法で値を変更するだけでその変更を検知してUIに変更できる
-- この仕組みは、オブジェクトへの操作に介入できるProxyだからこそ実現しやすいものだと考えている
-
-</v-clicks>
+- `reactive`APIは`Proxy`がベースとなっている
+- `state.count++`のような記法で値を変更するだけでUIに変更できる👍
+- この仕組みは、`Proxy`だからこそ実現しているのでは🤔
 
 </BigText>
 

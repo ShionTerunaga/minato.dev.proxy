@@ -1,4 +1,4 @@
-<PageTitle title="motionとは"/>
+<PageTitle title="Motionとは"/>
 
 <BigText>
 <v-clicks animation="fade-in">

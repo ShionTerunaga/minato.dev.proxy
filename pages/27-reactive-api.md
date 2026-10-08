@@ -1,28 +1,18 @@
-<PageTitle title="reactive" />
-
+<PageTitle title="事例：Vue.jsのreactive" />
 
 <BigText>
 
-<v-click animation="fade-in">
-
-オブジェクト自体をリアクティブする`reactive`というAPIが存在する。
-
-</v-click>
+Vue.jsのリアクティビティーシステムの1つであるオブジェクト自体をリアクティブする`reactive`というAPIが存在する。
 
 </BigText>
 
-
-<v-click animation="fade-in">
-
 ```ts
-import { reactive } from 'vue'
+import { reactive } from "vue";
 
-const state = reactive({ count: 0 })
+const state = reactive({ count: 0 });
 ```
 
-</v-click>
 <br>
-<v-click animation="fade-in">
 
 ```vue
 <button @click="state.count++">
@@ -30,15 +20,12 @@ const state = reactive({ count: 0 })
 </button>
 ```
 
-</v-click>
-
 <BigText>
 
 <v-click animation="fade-in">
 
-よく考えてみると`state.count++`としただけでUIに変更された状態が反映されるのって不思議🤔
+「リアクティブオブジェクトは JavaScript プロキシであり、通常のオブジェクトと同じように動作します。」by 公式ドキュメント
 
 </v-click>
 
 </BigText>
-
