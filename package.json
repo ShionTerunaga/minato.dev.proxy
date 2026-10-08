@@ -1,0 +1,29 @@
+{
+  "name": "minato.dev.1",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "slidev build",
+    "build:cloudflare": "pnpm build && node scripts/prepare-cloudflare.mjs",
+    "dev": "slidev --open",
+    "deploy": "pnpm build:cloudflare && wrangler pages deploy dist",
+    "preview:cloudflare": "pnpm build:cloudflare && wrangler pages dev dist",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "markdown-it": "14.3.2",
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0",
+    "wrangler": "4.147.0"
+  }
+}

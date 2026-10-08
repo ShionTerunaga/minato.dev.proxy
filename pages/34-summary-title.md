@@ -1,0 +1,2 @@
+<SectionTitle title="まとめ" />
+
