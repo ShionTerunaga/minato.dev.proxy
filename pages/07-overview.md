@@ -2,7 +2,7 @@
 level: 2
 ---
 
-<PageTitle title="Proxyとは"/>
+<PageTitle title="JaveScriptのProxyとは"/>
 
 <QuoteBlock>
   Proxy オブジェクトにより別なオブジェクトのプロキシーを作成することができ、そのオブジェクトの基本的な操作に介入したり再定義したりすることができます。    by MDN

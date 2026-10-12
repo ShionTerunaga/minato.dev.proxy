@@ -20,6 +20,10 @@ src: ./pages/04-introduction.md
 ---
 
 ---
+src: ./pages/40-why.md 
+---
+
+---
 src: ./pages/07-overview.md
 ---
 
@@ -48,11 +52,11 @@ src: ./pages/32-vue-explain.md
 ---
 
 ---
-src: ./pages/33-chibivue.md
+src: ./pages/38-example.md
 ---
 
 ---
-src: ./pages/38-example.md
+src: ./pages/33-chibivue.md
 ---
 
 ---

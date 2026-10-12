@@ -15,11 +15,11 @@ level: 2
 
 <br>
 
-<SubsectionTitle title="趣味"/>
+<BigText>
 
-- 酒🥃
-- ダーツ🎯(初心者です)
-- ランニング🏃🏻
+もし、仲良くしてくれたらめっちゃ泣きながら喜びます😭
+
+</BigText>
 
 <aside class="introduction-visuals" aria-label="プロフィール画像">
   <img
