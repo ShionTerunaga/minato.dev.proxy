@@ -15,7 +15,7 @@ class MutableReactiveHandler extends BaseReactiveHandler {
     //これ以降にたくさんゴニョゴニョ書いているよぉ〜
     if (target === toRaw(receiver) && result) {
       if (!hadKey) {
-        trigger(target, TriggerOpTypes.ADD, key, value); // UI更新などのリアクティブな処理を発火する入り口
+        trigger(target, TriggerOpTypes.ADD, key, value); // UI更新などやれ〜と通知する
       } else if (hasChanged(value, oldValue)) {
         trigger(target, TriggerOpTypes.SET, key, value, oldValue);
       }

@@ -13,6 +13,11 @@
 <BigText>
 
 などなど。<br>
+
+<v-click animation="fade-in">
+
 割と使われてんじゃん😎　(Σ＼(ﾟДﾟ;)偉そうに言うなや)
+
+</v-click>
 
 </BigText>

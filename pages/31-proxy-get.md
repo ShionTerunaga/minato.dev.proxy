@@ -13,7 +13,7 @@ class BaseReactiveHandler implements ProxyHandler<Target> {
     //なんか色々書いてあるわよ〜
 
     if (!isReadonly) {
-      // プロパティと、それを参照するeffectの依存関係を登録・管理する
+      // effectの依存関係などを管理する
       track(target, TrackOpTypes.GET, key);
     }
 

@@ -25,6 +25,6 @@ console.log(hoge.yakiton); //やきとんが食べたい
 
 <BigText>
 
-`hoge`は`foods`のオブジェクトの代理となって、返却するデータを加工している
+`hoge`は`foods`の代理となって、返却するデータを加工している
 
 </BigText>
