@@ -21,7 +21,7 @@
     "vue": "^3.5.33"
   },
   "devDependencies": {
-    "markdown-it": "14.3.2",
+    "markdown-it": "14.3.3",
     "oxfmt": "^0.71.0",
     "oxlint": "^1.86.0",
     "wrangler": "4.147.0"
